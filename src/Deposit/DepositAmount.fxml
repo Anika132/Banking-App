@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Deposit.DepositAmountController">
+   <content>
+      <AnchorPane>
+         <children>
+            <ScrollPane>
+               <content>
+                  <AnchorPane prefHeight="506.0" prefWidth="760.0" style="-fx-background-color: #eee;">
+                     <children>
+                        <Pane layoutX="208.0" prefHeight="506.0" prefWidth="342.0" style="-fx-background-color: white; -fx-border-color: #4984af; -fx-border-width: 5;" stylesheets="@../application/application.css">
+                           <children>
+                              <Label layoutX="60.0" layoutY="22.0" text="Deposit Amount" textFill="#4984af">
+                                 <font>
+                                    <Font name="Impact" size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="106.0" text="Your Account Number :- ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="16.0" layoutY="149.0" text="Your Current Balance  :- ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="account_no" layoutX="194.0" layoutY="103.0" text="000000">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="balance" layoutX="206.0" layoutY="146.0" prefHeight="31.0" prefWidth="122.0" text="1000000000">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="amt_deposit" layoutX="23.0" layoutY="228.0" prefHeight="33.0" prefWidth="296.0" promptText="Enter Amount to Deposit">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Button layoutX="73.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#depositAmount" prefHeight="40.0" prefWidth="180.0" styleClass="login-button" stylesheets="@../application/application.css" text="  Deposit">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS" size="18" styleClass="login-icon" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="balance1" layoutX="194.0" layoutY="146.0" text="₹">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <JFXPasswordField fx:id="pin" layoutX="24.0" layoutY="315.0" prefHeight="29.0" prefWidth="294.0" promptText="Enter Account PIN">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXPasswordField>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

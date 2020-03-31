@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Transfer.TransferMoneyController">
+   <content>
+      <AnchorPane prefHeight="506.0" prefWidth="760.0" style="-fx-background-color: #eee;">
+         <children>
+            <Pane layoutX="148.0" onMouseClicked="#searchInfoUser" prefHeight="506.0" prefWidth="445.0" style="-fx-background-color: white; -fx-border-color: #4984af; -fx-border-width: 5;" stylesheets="@../application/application.css">
+               <children>
+                  <Label layoutX="130.0" layoutY="28.0" prefHeight="39.0" prefWidth="209.0" text="Transfer Money" textFill="#4984af">
+                     <font>
+                        <Font name="Impact" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="106.0" text="Your Account Number :- ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="149.0" text="Your Current Balance  :- ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="account_no" layoutX="291.0" layoutY="104.0" text="000000">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance" layoutX="304.0" layoutY="146.0" prefHeight="31.0" prefWidth="128.0" text="1000000000">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="account_no_transfer" layoutX="13.0" layoutY="196.0" prefHeight="33.0" prefWidth="296.0" promptText="Enter Account No to Transfer">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="money" layoutX="66.0" layoutY="271.0" prefHeight="29.0" prefWidth="296.0" promptText="Enter Amount to Transfer">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <Button layoutX="73.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#transferAmount" prefHeight="40.0" prefWidth="281.0" styleClass="login-button" stylesheets="@../application/application.css" text="  Transfer Money">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SEND" size="18" styleClass="login-icon" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="balance1" layoutX="291.0" layoutY="147.0" prefHeight="31.0" prefWidth="17.0" text="₹">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="pin" layoutX="66.0" layoutY="343.0" prefHeight="25.0" prefWidth="296.0" promptText="Enter Your PIN">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Button layoutX="327.0" layoutY="196.0" mnemonicParsing="false" onMouseClicked="#searchInfoUser" prefHeight="33.0" prefWidth="107.0" styleClass="login-button" stylesheets="@../application/application.css" text="  Search">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SEARCH" size="17" styleClass="login-icon" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

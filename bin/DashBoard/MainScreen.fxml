@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashBoard.MainScreenController">
+   <content>
+      <AnchorPane fx:id="dashboard_main" prefHeight="506.0" prefWidth="760.0" style="-fx-background-color: white;">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="760.0" style="-fx-background-color: #33b9f9;">
+               <children>
+                  <Label layoutX="34.0" layoutY="24.0" prefHeight="54.0" prefWidth="52.0" text="Hi, " textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" layoutX="79.0" layoutY="26.0" prefHeight="53.0" prefWidth="428.0" text="  Your Name " textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="578.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#openTransactionHistoryScreen" prefHeight="25.0" prefWidth="152.0" styleClass="dashboard-btns" stylesheets="@../application/application.css" text="View Transaction">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="578.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#openTransferMoneyScreen" prefHeight="25.0" prefWidth="152.0" styleClass="dashboard-btns" stylesheets="@../application/application.css" text="Money Transfer">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="45.0" layoutY="139.0" text="Welcome Back,">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="body" layoutX="167.0" layoutY="196.0" prefHeight="182.0" prefWidth="535.0" style="-fx-background-color: white;" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea layoutY="437.0" prefHeight="69.0" prefWidth="760.0" />
+            <FontAwesomeIconView fill="#33b9f9" glyphName="HOME" layoutX="127.0" layoutY="481.0" size="25" text="" />
+            <Label layoutX="161.0" layoutY="461.0" prefHeight="22.0" prefWidth="212.0" text="Allied Bank Limited , Delhi" textFill="#868181">
+               <font>
+                  <Font name="Candara Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="473.0" layoutY="459.0" prefHeight="22.0" prefWidth="212.0" text="(011)- 22198504" textFill="#868181">
+               <font>
+                  <Font name="Candara Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#33b9f9" glyphName="PHONE" layoutX="445.0" layoutY="480.0" size="25" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
