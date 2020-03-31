@@ -8,3 +8,4 @@ This Repository contains a real-time applicaion that is multi- functional and ef
 * Transfer Money to another Account
 * PIN can be changed
 * Transaction logs are also made available
+![TestImage1](https://bfsi.eletsonline.com/wp-content/uploads/2020/02/Bank-of-Baroda-slashes-MCLR-rates-EMIs-to-get-cheaper.jpg)
